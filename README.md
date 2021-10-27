@@ -3,6 +3,14 @@
 
 
 
+Are there any sub-optimal choices( or short cuts taken due to limited time ) in this implementation?
+Short cuts taken in this implementation - UI for Exchange B and an accurate recommendation component to compare prices from two different exchanges.
+Is any part of it over-designed? ( It is fine to over-design to showcase your skills as long as you are clear about it)
+No
+If you have to scale your solution to 100 users/second traffic what changes would you make, if any?
+Don't think there would be any changes to this website with increased traffic
+What are some other enhancements you would have made, if you had more time to do this implementation
+I would implement the UI for the entire application better and design the recommendation system to work better.
 
 
 # Getting Started with Create React App
