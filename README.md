@@ -8,7 +8,7 @@ Short cuts taken in this implementation - UI for Exchange B and an accurate reco
 Is any part of it over-designed? ( It is fine to over-design to showcase your skills as long as you are clear about it)<br/>
 No<br/>
 If you have to scale your solution to 100 users/second traffic what changes would you make, if any?<br/>
-Don't think there would be any changes to this website with increased traffic<br/>
+Don't think there would be any changes to this website with increased traffic, only the server would change to take up the speed of the requests<br/>
 What are some other enhancements you would have made, if you had more time to do this implementation<br/>
 I would implement the UI for the entire application better and design the recommendation system to work better.<br/>
 
