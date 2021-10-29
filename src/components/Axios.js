@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import NumberFormat from 'react-number-format';
+import Recommendation from './Recommendation';
 
 
 
@@ -28,18 +29,24 @@ class Axios extends Component {
 
     render() {
       return (
-        <div className="Axios">
+        <div className="card mr-0 custom-card">
+          <div className="card-body">
                   {Object.keys(this.state.cryptos).map((key) => (
                       <div key={key}>
                         {key}
-                      	<NumberFormat 
-							              value={parseInt(this.state.cryptos[key].USD)}
-							              displayType={'text'}
-							              decimalprecision={2} 
-						                thousandSeparator={true} 
-							              prefix={' $'} />
-                      </div>
+                        <br/>
+                      	<NumberFormat
+				value={parseInt(this.state.cryptos[key].USD)}
+				displayType={'text'}
+				decimalprecision={2} 
+				thousandSeparator={true} 
+				prefix={' $'} />
+                            <Recommendation val2={this.state.cryptos[key]}/>
+                            {console.log(typeof (this.state.cryptos[key]+''))}
+                            <br/>
+                        </div>
                   ))}
+          </div>
         </div>
       );
       
