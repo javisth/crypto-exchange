@@ -1,17 +1,18 @@
-<img width="1280" alt="Screen Shot 2021-10-28 at 8 37 07 PM" src="https://user-images.githubusercontent.com/4967153/139354570-0793be5c-757a-4a92-8a63-eee22085585e.png">
 
 
+
+<img width="1273" alt="Screen Shot 2021-11-08 at 12 08 39 PM" src="https://user-images.githubusercontent.com/4967153/140786717-9319b881-b90a-4bb6-bfeb-a1ea352537b2.png">
 
 
 
 Are there any sub-optimal choices( or short cuts taken due to limited time ) in this implementation? <br/>
-Short cuts taken in this implementation - UI for Exchange B and an accurate recommendation component to compare prices from two different exchanges. <br/>
+Short cuts taken in this implementation - UI for Exchange B. <br/>
 Is any part of it over-designed? ( It is fine to over-design to showcase your skills as long as you are clear about it)<br/>
 No<br/>
 If you have to scale your solution to 100 users/second traffic what changes would you make, if any?<br/>
 Don't think there would be any changes to this website with increased traffic, only the server would change to take up the speed of the requests<br/>
 What are some other enhancements you would have made, if you had more time to do this implementation<br/>
-I would implement the UI for the entire application better and design the recommendation system to work better.<br/>
+I would implement the UI for the entire application better and design the recommendation system to work better. I would also include more exchanges to compare prices with and implement a more comprehensive recommendation system.<br/>
 
 
 # Getting Started with Create React App
