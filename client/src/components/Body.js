@@ -144,7 +144,7 @@ class Body extends React.Component {
       <div className="row mt-5 mt-xs-4">
         <div className="col-6 mb-3">
           <div className="card-deck custom-card-deck">
-            Exchange A
+            Exchange A: Cryptonator
             <PriceCard
               header="Bitcoin(BTC)"
               alt="fireSpot"
@@ -167,11 +167,9 @@ class Body extends React.Component {
             />
           </div>
         </div>
-        <div className="col mb-3">
-          <div className="card-deck custom-card-deck">
-            <div className="col-6 mb-3">
-              <div className="card-deck custom-card-deck">
-                Exchange B
+        <div className="col-6 mb-3">
+            <div className="col mb-3">
+                Exchange B: CryptoCompare
                 <Axios
                   btceth={{
                     btc: this.state.btcusd,
@@ -179,8 +177,6 @@ class Body extends React.Component {
                   }}
                   setOtherExchangeValue={this.setOtherExchangeValue}
                 />
-              </div>
-            </div>
           </div>
         </div>
         <div className="col-12">
