@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import NumberFormat from "react-number-format";
 import Recommendation from "./Recommendation";
+import PriceCard from "./PriceCard";
 
 class Axios extends Component {
   constructor(props) {
@@ -33,17 +33,14 @@ class Axios extends Component {
   render() {
     return (
       <div className="card mr-0 custom-card">
-        <div className="card-body">
+       {/*} <div className="card-body">*/}
           {Object.keys(this.state.cryptos).map((key) => (
             <div key={key}>
-              {key}
-              <br />
-              <NumberFormat
-                value={parseInt(this.state.cryptos[key].USD)}
-                displayType={"text"}
-                decimalprecision={2}
-                thousandSeparator={true}
-                prefix={" $"}
+              <PriceCard
+              header={key==='BTC'?'Bitcoin(BTC)':'Ethereum(ETC)'}
+              alt="fireSpot"
+              label="(Price in USD)"
+              value={parseInt(this.state.cryptos[key].USD)}
               />
               <Recommendation
                 value1={this.state.cryptos[key].USD}
@@ -53,7 +50,7 @@ class Axios extends Component {
               <br />
             </div>
           ))}
-        </div>
+        {/*</div>*/}
       </div>
     );
   }
